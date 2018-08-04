@@ -17,8 +17,43 @@ public class TestApp {
 
 
     @Test
-    public void CheckTextTela(){
+    public void CheckTextTela() {
         new RobotApp()
-                .CheckText();
+                .CheckTextLvr01()
+                .CheckTextLvr02()
+                .CheckTextLvr03()
+                .CheckHeader()
+                .CheckNameApp();
+        }
+
+    @Test
+    public void EscolherLivro01() throws InterruptedException {
+        new RobotApp()
+                .EscolherLivro01()
+                .ClickBotaoComprar()
+                .ValidaCompraCsharp();
+
     }
-}
+
+    @Test
+    public void EscolherLivro02() {
+        new RobotApp()
+                .EscolherLivro02()
+                .ClickBotaoComprar()
+                .ValidaCompraAndroid();
+    }
+
+    @Test
+
+    public void EscolherLivro03(){
+        new RobotApp()
+                .EscolherLivro03()
+                .ClickBotaoComprar()
+                .ValidaCompraJava();
+    }
+
+
+
+
+
+    }
