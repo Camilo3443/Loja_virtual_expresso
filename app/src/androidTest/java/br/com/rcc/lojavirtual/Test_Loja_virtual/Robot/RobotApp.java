@@ -9,6 +9,7 @@ import static android.support.test.espresso.matcher.RootMatchers.isDialog;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static br.com.rcc.lojavirtual.Test_Loja_virtual.Constants.Constants_app.HEADER_TEXT;
+import static br.com.rcc.lojavirtual.Test_Loja_virtual.Constants.Constants_app.MSG_COMPRA_TODAS;
 import static br.com.rcc.lojavirtual.Test_Loja_virtual.Constants.Constants_app.MSG_LVR_ANDROID;
 import static br.com.rcc.lojavirtual.Test_Loja_virtual.Constants.Constants_app.MSG_LVR_CSHARP;
 import static br.com.rcc.lojavirtual.Test_Loja_virtual.Constants.Constants_app.MSG_LVR_JAVA;
@@ -81,5 +82,9 @@ public class RobotApp extends ScreenRobot {
             checkDialogWithTextIsDisplayed(MSG_LVR_JAVA);
             return this;
         }
+    public RobotApp ValidaCompraTodos() {
+        checkDialogWithTextIsDisplayed(MSG_COMPRA_TODAS);
+        return this;
+    }
     }
 

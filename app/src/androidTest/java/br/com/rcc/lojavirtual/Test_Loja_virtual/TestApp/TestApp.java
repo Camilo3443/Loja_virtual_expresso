@@ -52,6 +52,15 @@ public class TestApp {
                 .ValidaCompraJava();
     }
 
+@Test
+    public void ComprarTodosOsLivros() {
+        new RobotApp()
+                .EscolherLivro01()
+                .EscolherLivro02()
+                .EscolherLivro03()
+                .ClickBotaoComprar()
+                .ValidaCompraTodos();
+}
 
 
 
